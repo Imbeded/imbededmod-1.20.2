@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1,
+	"id": "imbededmod",
+	"version": "${version}",
+	"name": "Imbededmod",
+	"description": "This is a Mod that Imbeded made and is for pure practice for modding",
+	"authors": [
+		"Imbeded!"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "MIT",
+	"icon": "assets/imbededmod/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"net.imbeded.imbededmod.ImbededMod"
+		],
+		"client": [
+			"net.imbeded.imbededmod.ImbededModClient"
+		],
+		"fabric-datagen": [
+			"net.imbeded.imbededmod.ImbededModDataGenerator"
+		]
+	},
+	"mixins": [
+		"imbededmod.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.14.24",
+		"minecraft": "~1.20.2",
+		"java": ">=17",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
